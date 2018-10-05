@@ -17,13 +17,6 @@ searchTerm=input('Enter keyword/hastag to search about: ')
 numOfSearch=int(input('Enter Number of tweets:'))
 tweets = tweepy.Cursor(api.search, q=searchTerm, lang='English').items(numOfSearch)
 
-user = api.me()
-
-print('Name: ' + user.name)
-print('Location: ' + user.location)
-print('Friends: ' + str(user.friends_count))
-
-'''
 positive=0
 negative=0
 neutral=0
@@ -73,10 +66,5 @@ plt.axis('equal')
 plt.tight_layout()
 plt.show()
 
-
-
-
-
-'''
 
 
